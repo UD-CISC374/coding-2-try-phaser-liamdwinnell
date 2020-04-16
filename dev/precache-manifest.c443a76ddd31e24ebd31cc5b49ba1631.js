@@ -44,6 +44,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/coding-2-try-phaser-liamdwinnell/devassets/ship3.png"
   },
   {
+    "revision": "6ccc73f457c181f5841d12372ad46c8c",
+    "url": "/coding-2-try-phaser-liamdwinnell/devfavicon.ico"
+  },
+  {
     "revision": "78440b6fe90da0434654",
     "url": "/coding-2-try-phaser-liamdwinnell/devgen.main.849c9e6a91850e68cb71.bundle.js"
   },
