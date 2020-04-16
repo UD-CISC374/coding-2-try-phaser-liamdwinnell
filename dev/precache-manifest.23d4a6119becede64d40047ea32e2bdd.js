@@ -16,6 +16,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/coding-2-try-phaser-liamdwinnell/devassets/explosion.png"
   },
   {
+    "revision": "9d79a2ec01455afa082d23e42f457801",
+    "url": "/coding-2-try-phaser-liamdwinnell/devassets/font.png"
+  },
+  {
+    "revision": "38c02ad8ccaf9579150bb10d283e2b0c",
+    "url": "/coding-2-try-phaser-liamdwinnell/devassets/font.xml"
+  },
+  {
     "revision": "ff70e55fbb2b70941d98b3e7ab1a01aa",
     "url": "/coding-2-try-phaser-liamdwinnell/devassets/player.png"
   },
@@ -36,15 +44,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/coding-2-try-phaser-liamdwinnell/devassets/ship3.png"
   },
   {
-    "revision": "2f3c0ff8170f53b7ef05",
-    "url": "/coding-2-try-phaser-liamdwinnell/devgen.main.694b7080eebee30a19d8.bundle.js"
+    "revision": "30f10be795da4e48b66f",
+    "url": "/coding-2-try-phaser-liamdwinnell/devgen.main.690831def9e07b564c97.bundle.js"
   },
   {
     "revision": "201b65bee9df6270f739",
     "url": "/coding-2-try-phaser-liamdwinnell/devgen.vendors.a047ee0740c7d21714d9.bundle.js"
   },
   {
-    "revision": "87c813b605498b790eaa4d766e1d3e9c",
+    "revision": "f6d3403e7837f0143bc28f1b71dbaae1",
     "url": "/coding-2-try-phaser-liamdwinnell/devindex.html"
   },
   {
