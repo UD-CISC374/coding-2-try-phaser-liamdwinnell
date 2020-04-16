@@ -4,14 +4,14 @@ export default class PreloadScene extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image("background", "src/assets/background.png");
-    this.load.spritesheet("ship", "src/assets/ship.png",{frameWidth: 16, frameHeight: 16})
-    this.load.spritesheet("ship2", "src/assets/ship2.png",{frameWidth: 32, frameHeight: 16})
-    this.load.spritesheet("ship3", "src/assets/ship3.png",{frameWidth: 32, frameHeight: 32})
-    this.load.spritesheet("explosion", "src/assets/explosion.png",{frameWidth: 16, frameHeight: 16})
-    this.load.spritesheet("power-up", "src/assets/power-up.png",{frameWidth: 16, frameHeight: 16})
-    this.load.spritesheet("player", "src/assets/player.png",{frameWidth: 16, frameHeight: 24})
-    this.load.spritesheet("beam", "src/assets/beam.png", {frameWidth: 16, frameHeight: 16})
+    this.load.image("background", "assets/background.png");
+    this.load.spritesheet("ship", "assets/ship.png",{frameWidth: 16, frameHeight: 16})
+    this.load.spritesheet("ship2", "assets/ship2.png",{frameWidth: 32, frameHeight: 16})
+    this.load.spritesheet("ship3", "assets/ship3.png",{frameWidth: 32, frameHeight: 32})
+    this.load.spritesheet("explosion", "assets/explosion.png",{frameWidth: 16, frameHeight: 16})
+    this.load.spritesheet("power-up", "assets/power-up.png",{frameWidth: 16, frameHeight: 16})
+    this.load.spritesheet("player", "assets/player.png",{frameWidth: 16, frameHeight: 24})
+    this.load.spritesheet("beam", "assets/beam.png", {frameWidth: 16, frameHeight: 16})
     
     this.load.bitmapFont("pixelFont", "src/assets/font.png", "src/assets/font.xml")
   }
