@@ -56,6 +56,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/coding-2-try-phaser-liamdwinnell/devgen.vendors.a047ee0740c7d21714d9.bundle.js"
   },
   {
+    "revision": "186d48e89f3c72533e6e014075c6eadb",
+    "url": "/coding-2-try-phaser-liamdwinnell/devicons-192.png"
+  },
+  {
+    "revision": "4f0be017c1f79c2b07e017d14a031555",
+    "url": "/coding-2-try-phaser-liamdwinnell/devicons-512.png"
+  },
+  {
     "revision": "764bfc2d0c1ff96af7ecaab7191a2df5",
     "url": "/coding-2-try-phaser-liamdwinnell/devindex.html"
   },
