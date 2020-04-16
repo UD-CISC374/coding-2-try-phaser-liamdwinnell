@@ -12,6 +12,8 @@ export default class PreloadScene extends Phaser.Scene {
     this.load.spritesheet("power-up", "src/assets/power-up.png",{frameWidth: 16, frameHeight: 16})
     this.load.spritesheet("player", "src/assets/player.png",{frameWidth: 16, frameHeight: 24})
     this.load.spritesheet("beam", "src/assets/beam.png", {frameWidth: 16, frameHeight: 16})
+    
+    this.load.bitmapFont("pixelFont", "src/assets/font.png", "src/assets/font.xml")
   }
 
   create() {

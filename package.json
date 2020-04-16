@@ -1,5 +1,5 @@
 {
-  "name": "educational-phaser-game-template",
+  "name": "coding-2-try-phaser-liamdwinnell",
   "version": "0.0.1",
   "description": "Phaser 3 starter template for educational games, using TypeScript, webpack, and Github Pages.",
   "homepage": "https://github.com/acbart/educational-phaser-game-template#readme",
@@ -26,17 +26,17 @@
     "starter"
   ],
   "author": {
-    "name": "Austin Cory Bart",
-    "url": "https://github.com/acbart"
+    "name": "Liam Dwinnell",
+    "url": "https://github.com/liamdwinnell"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/acbart/educational-phaser-game-template.git"
+    "url": "https://github.com/UD-CISC374/coding-2-try-phaser-liamdwinnell.git"
   },
   "template": {
-    "name": "educational-phaser-game-template",
-    "url": "https://github.com/acbart/educational-phaser-game-template",
-    "author": "Austin Cory Bart (https://github.com/acbart)"
+    "name": "coding-2-try-phaser-liamdwinnell",
+    "url": "https://github.com/UD-CISC374/coding-2-try-phaser-liamdwinnell.git",
+    "author": "Liam Dwinnell (https://github.com/liamdwinnell)"
   },
   "engines": {
     "node": ">=8.0.0"

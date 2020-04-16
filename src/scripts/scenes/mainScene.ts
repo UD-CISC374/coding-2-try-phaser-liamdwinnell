@@ -16,6 +16,8 @@ export default class MainScene extends Phaser.Scene {
   spacebar: Phaser.Input.Keyboard.Key;
   projectiles: Phaser.GameObjects.Group;
   enemies: Phaser.Physics.Arcade.Group;
+  scoreLabel: Phaser.GameObjects.BitmapText;
+  score: number;
 
   constructor() {
     super({ key: 'MainScene' });
@@ -26,6 +28,10 @@ export default class MainScene extends Phaser.Scene {
     //this.background = this.add.image(0, 0, "background");
     this.background = this.add.tileSprite(0,0, DEFAULT_WIDTH, DEFAULT_HEIGHT, "background");
     this.background.setOrigin(0, 0);
+    
+    this.score = 0
+
+    this.scoreLabel = this.add.bitmapText(10,5,"pixelFont", "SCORE " + this.score, 16)
 
     this.ship1 = this.add.sprite(100, 100, "ship")
     this.ship2 = this.add.sprite(150, 100, "ship2")
@@ -85,21 +91,24 @@ export default class MainScene extends Phaser.Scene {
 
     this.physics.add.overlap(this.projectiles, this.enemies, this.hitEnemy)
   }
-  hitEnemy(projectile, enemy){
+  hitEnemy  = (projectile, enemy) => {
+
+    this.score += 15
+    
     projectile.destroy()
-    enemy.y = 0
+    this.resetShipPos(enemy)
+    /*enemy.y = 0
     var randomX = Phaser.Math.Between(0, DEFAULT_WIDTH)
     enemy.x = randomX
+    */
   }
 
   pickPowerUp(player, powerUp){
     powerUp.disableBody(true,true)
   }
 
-  hurtPlayer(player, enemy){
-    enemy.y = 0
-    var randomX = Phaser.Math.Between(0, DEFAULT_WIDTH)
-    enemy.x = randomX
+  hurtPlayer = (player, enemy) =>{
+    this.resetShipPos(enemy)
     player.x = DEFAULT_WIDTH/2 - 8
     player.y = DEFAULT_HEIGHT - 64
   }
@@ -129,9 +138,9 @@ export default class MainScene extends Phaser.Scene {
 
   //updates every tick 
   update() {
-    this.moveShip(this.ship1,.5)
+    this.moveShip(this.ship1,.5)  
     this.moveShip(this.ship2,.75)
-    this.moveShip(this.ship3, 1)
+      this.moveShip(this.ship3, 1)
   
     this.movePlayerManager()
 
@@ -145,6 +154,9 @@ export default class MainScene extends Phaser.Scene {
       var beam = this.projectiles.getChildren()[i]
       beam.update()
     }
+
+    this.scoreLabel.destroy()
+    this.scoreLabel = this.add.bitmapText(10,5,"pixelFont", "SCORE " + this.score, 16)
 
   }
 
